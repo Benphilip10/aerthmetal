@@ -1,14 +1,27 @@
 import { NavLink } from "react-router-dom";
 import logo_blue from "../assets/icons/logo_blue.svg";
 import arrow_down from "../assets/icons/arrow_down.svg";
+import DropDown from "./DropDown";
+
+import { useState } from "react";
 
 const NavBar = () => {
 
-// const activeLink = "border-secondary-red border-b-2";
+
+  const [dropdown, setDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdown(!dropdown);
+}
+
+const closeDropdown = () => {
+  setDropdown(false);
+};
 
   return (
 
 <>
+
 <nav className="max-container fixed z-50 w-full" data-aos="fade-in" data-aos-duration="700">
 
   <div className=" mt-0 padding w-full nav-gradient" >
@@ -32,35 +45,45 @@ const NavBar = () => {
           className="hover:border-b-2 border-white transition-all 
           duration-100 ease-in"
 
-        // className={({isActive}) =>
-        //       isActive? activeLink :''}
+       onClick={closeDropdown}
         >
         <p>Home</p>
         </NavLink>
 
-        <NavLink  to='/about-us'><p className="flex flex-row gap-1">About us <span><img src={arrow_down}/>
-        </span></p></NavLink>
+        
+        <NavLink onClick={toggleDropdown}><p className="flex flex-row gap-1">About us <span><img src={arrow_down}/>
+        </span></p>
+        </NavLink>
 
             <NavLink to='/services-page'
             className="hover:border-b-2 border-white transition-all 
               duration-100 ease-in"
+              onClick={closeDropdown}
             ><p>Services</p></NavLink>
 
             <NavLink to='/sustainability-page'
               className="hover:border-b-2 border-white transition-all 
               duration-100 ease-in"
+              onClick={closeDropdown}
             ><p>Sustainability</p></NavLink>
 
-            <NavLink><p>Career</p></NavLink>
+            <NavLink
+            onClick={closeDropdown}
+            ><p>Career</p></NavLink>
 
-            <NavLink><p>Contact Us</p></NavLink>
+            <NavLink
+            onClick={closeDropdown}
+            ><p>Contact Us</p></NavLink>
 
-            <NavLink><p>Reports</p></NavLink>
+            <NavLink
+            onClick={closeDropdown}
+            ><p>Reports</p></NavLink>
       </div>
     </div>
   </div>
-
+  {dropdown && <DropDown/>}
   </nav>
+    
   </>
   )
 }
