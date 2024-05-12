@@ -24,7 +24,13 @@ export default {
         
         'service-hero' : "url(src/assets/images/service_hero_img.png)",
 
-        'grey-curve-bg': "url(src/assets/images/grey_curve.svg)"
+        'grey-curve-bg': "url(src/assets/images/grey_curve.svg)",
+
+        'long-grey-curve': "url(src/assets/images/sustainability_grey_curve.svg)",
+
+        'long-red-curve': "url(src/assets/images/sustainability_red_curve.svg)"
+
+
       },
 
       boxShadow: {

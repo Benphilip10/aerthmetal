@@ -9,6 +9,10 @@ import twitter_x from '../assets/icons/twitter_x.svg'
 
 const Footer = () => {
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0); // Scrolls to the top of the page
+      };
+
   return (
     <div className="padding h-full mt-10 bg-[#E6E9EE] max-container">
 
@@ -41,7 +45,7 @@ const Footer = () => {
 
                     <h1 className='text-primary-blue font-bold text-[16px] mb-8'>Company</h1>
 
-                    <NavLink><p className='text-[14px] mb-5'>About Us</p></NavLink>
+                    <NavLink to='/about-us' onClick={scrollToTop}><p className='text-[14px] mb-5'>About Us</p></NavLink>
                     <NavLink><p className='text-[14px] mb-5'>Careers</p></NavLink>
                     <NavLink><p className='text-[14px] mb-5'>News & Insights</p></NavLink>
                     <NavLink><p className='text-[14px] mb-5'>Partnerships</p></NavLink>
@@ -54,7 +58,7 @@ const Footer = () => {
                     <h1 className='text-primary-blue font-bold text-[16px] mb-8'>Services</h1>
 
                     <NavLink><p className='text-[14px] mb-5'>Aerthmetal Products</p></NavLink>
-                    <NavLink><p className='text-[14px] mb-5'>Sustainability</p></NavLink>
+                    <NavLink to='/sustainability-page' onClick={scrollToTop}><p className='text-[14px] mb-5'>Sustainability</p></NavLink>
                     <NavLink><p className='text-[14px] mb-5'>Operations</p></NavLink>
                     <NavLink><p className='text-[14px] mb-5'>Assets</p></NavLink>
 

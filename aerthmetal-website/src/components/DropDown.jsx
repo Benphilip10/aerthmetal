@@ -11,7 +11,7 @@ const DropDown = (closeDropdown) => {
 
     
   return (
-    <div className="absolute w-[190px] h-100 bg-white p-4 rounded-xl top-[70px] right-[580px] scale-in-top"
+    <div className="absolute w-[190px] shadow-md h-100 bg-white p-4 rounded-xl top-[70px] right-[580px] scale-in-top"
     >
         <div className="flex flex-col justify-start">
         <Link to='/about-us'><p className="hover:bg-[#D9DEE5] p-2 rounded-md transition-all 

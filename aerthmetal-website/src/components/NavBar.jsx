@@ -68,14 +68,20 @@ const closeDropdown = () => {
             ><p>Sustainability</p></NavLink>
 
             <NavLink
+            className="hover:border-b-2 border-white transition-all 
+              duration-100 ease-in"
             onClick={closeDropdown}
             ><p>Career</p></NavLink>
 
             <NavLink
+            className="hover:border-b-2 border-white transition-all 
+              duration-100 ease-in"
             onClick={closeDropdown}
             ><p>Contact Us</p></NavLink>
 
             <NavLink
+            className="hover:border-b-2 border-white transition-all 
+              duration-100 ease-in"
             onClick={closeDropdown}
             ><p>Reports</p></NavLink>
       </div>
