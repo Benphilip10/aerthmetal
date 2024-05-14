@@ -28,7 +28,7 @@ const TeamCard = (props) => {
             <p className="font-normal mb-4 text-[18px]">{props.title}</p>
 
             <p className="font-light leading-6 mb-4 text-[15px]">{props.info} 
-            <NavLink to=""><span className="text-primary-blue font-semibold text-[13px]">"Read More"</span></NavLink>
+            <NavLink to="/team"><span className="text-primary-blue font-semibold text-[13px]" onClick>"Read More"</span></NavLink>
             </p>
         </div> 
     </div>

@@ -8,15 +8,16 @@ import { useState } from "react";
 const NavBar = () => {
 
 
-  const [dropdown, setDropdown] = useState(false);
+const [dropdown, setDropdown] = useState(false);
 
-  const toggleDropdown = () => {
+const toggleDropdown = () => {
     setDropdown(!dropdown);
 }
 
 const closeDropdown = () => {
   setDropdown(false);
 };
+
 
   return (
 
@@ -43,11 +44,12 @@ const closeDropdown = () => {
         <NavLink  to='/' 
 
           className="hover:border-b-2 border-white transition-all 
-          duration-100 ease-in"
+          duration-100 ease-in nav-link"
 
        onClick={closeDropdown}
+
         >
-        <p>Home</p>
+        <p className="nav-link-text">Home</p>
         </NavLink>
 
         
@@ -57,33 +59,33 @@ const closeDropdown = () => {
 
             <NavLink to='/services-page'
             className="hover:border-b-2 border-white transition-all 
-              duration-100 ease-in"
+              duration-100 ease-in nav-link"
               onClick={closeDropdown}
-            ><p>Services</p></NavLink>
+            ><p className="nav-link-text">Services</p></NavLink>
 
             <NavLink to='/sustainability-page'
               className="hover:border-b-2 border-white transition-all 
-              duration-100 ease-in"
+              duration-100 ease-in nav-link"
               onClick={closeDropdown}
-            ><p>Sustainability</p></NavLink>
+            ><p className="nav-link-text">Sustainability</p></NavLink>
 
-            <NavLink
+            <NavLink to='/careers'
             className="hover:border-b-2 border-white transition-all 
-              duration-100 ease-in"
+              duration-100 ease-in nav-link"
             onClick={closeDropdown}
-            ><p>Career</p></NavLink>
+            ><p className="nav-link-text">Career</p></NavLink>
 
-            <NavLink
+            <NavLink to='/contact-us'
             className="hover:border-b-2 border-white transition-all 
-              duration-100 ease-in"
+              duration-100 ease-in nav-link"
             onClick={closeDropdown}
-            ><p>Contact Us</p></NavLink>
+            ><p className="nav-link-text">Contact Us</p></NavLink>
 
-            <NavLink
+            <NavLink to='/reports'
             className="hover:border-b-2 border-white transition-all 
-              duration-100 ease-in"
+              duration-100 ease-in nav-link"
             onClick={closeDropdown}
-            ><p>Reports</p></NavLink>
+            ><p className="nav-link-text">Reports</p></NavLink>
       </div>
     </div>
   </div>

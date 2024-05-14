@@ -18,7 +18,7 @@ const ServicesPage = () => {
 
                 <div className="padding bg-grey-curve-bg h-full bg-no-repeat" data-aos="fade-in" data-aos-duration="600">
                         
-                <div className="flex flex-col mt-20" >
+                <div className="flex flex-col mt-20" data-aos='fade-down' data-aos-duration='900'>
                     <h1 className="font-bold text-[32px] text-primary-blue w-[400px] mt-12">
                         Mineral Exploration Services by Aerthmetal
                     </h1>

@@ -47,10 +47,10 @@ const GoldPage = () => {
 
                     {/* Uses section */}
 
-                    <div className='mt-10 flex gap-4'>
+                    <div className='mt-10 flex gap-6'>
                         
                         {/* Card 1 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="fade-right" data-aos-duration="1000">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -58,14 +58,14 @@ const GoldPage = () => {
                                 />
                             </div>
 
-                            <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Electronics</h1>
-                                <p className="font-light leading-6 text-[14px]">Gold is used to create connectors, switches, and contacts due to its excellent conductivity and resistance to corrosion.</p>
+                            <div className="p-4 mb-4">
+                                <h1 className="text-[30px] font-bold mb-2">Electronics</h1>
+                                <p className="font-light leading-6 text-[18px]">Gold is used to create connectors, switches, and contacts due to its excellent conductivity and resistance to corrosion.</p>
                             </div>
                         </div>
 
                         {/* Card 2 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="fade-left" data-aos-duration="1000">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -73,14 +73,17 @@ const GoldPage = () => {
                                 />
                             </div>
 
-                            <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Medical</h1>
-                                <p className="font-light leading-6 text-[14px]"> Gold is used in dentistry, surgery, and cancer treatment due to its biocompatibility and ability to conduct heat.</p>
+                            <div className="p-4 mb-4">
+                                <h1 className="text-[30px] font-bold mb-2">Medical</h1>
+                                <p className="font-light leading-6 text-[18px]"> Gold is used in dentistry, surgery, and cancer treatment due to its biocompatibility and ability to conduct heat.</p>
                             </div>
                         </div>
+                    </div>
 
+
+                    <div className="mt-8 flex gap-6">
                         {/* Card 3 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -88,14 +91,14 @@ const GoldPage = () => {
                                 />
                             </div>
 
-                            <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Aerospace</h1>
-                                <p className="font-light leading-6 text-[14px]">Gold is used to coat aircraft components due to its reflective properties and ability to withstand temperature.</p>
+                            <div className="p-4 mb-4">
+                                <h1 className="text-[30px] font-bold mb-2">Aerospace</h1>
+                                <p className="font-light leading-6 text-[18px]">Gold is used to coat aircraft components due to its reflective properties and ability to withstand temperature.</p>
                             </div>
                         </div>
 
                         {/* Card 4 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -104,12 +107,10 @@ const GoldPage = () => {
                             </div>
 
                             <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Jewelries</h1>
-                                <p className="font-light leading-6 text-[14px]"> In jewelry and coins, gold is prized for its luxurious appeal and durability.</p>
+                                <h1 className="text-[30px] font-bold mb-2">Jewelries</h1>
+                                <p className="font-light leading-6 text-[18px]"> In jewelry and coins, gold is prized for its luxurious appeal and durability.</p>
                             </div>
                         </div>
-
-
                     </div>
 
               </div>

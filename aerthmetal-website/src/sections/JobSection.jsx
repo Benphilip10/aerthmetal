@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 
 const JobSection = () => {
 
@@ -17,9 +18,10 @@ const JobSection = () => {
             </div>
                 
                 <div className="mt-8 text-center">
-              <button className= "bg-primary-blue py-3 px-10 rounded-md text-white hover:scale-105 transition-all duration-300 ease-in hover:bg-[#D9DEE5] hover:text-primary-blue">
+              <NavLink to='/careers'><button className= "bg-primary-blue py-3 px-10 rounded-md text-white hover:scale-105 transition-all duration-300 ease-in hover:bg-[#D9DEE5] hover:text-primary-blue" onClick>
                   Job Opportunities
               </button>
+              </NavLink>
               </div>
         </div>
 

@@ -2,7 +2,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import { HomePage, AboutUs, ServicesPage, SustainabilityPage, LithiumPage, GoldPage } from './pages';
+import { HomePage, AboutUs, ServicesPage, SustainabilityPage, LithiumPage, GoldPage, Assets,
+  Team, Reports, Contact, Careers, Contract } from './pages';
 import { NavBar } from './components';
 
 function App() {
@@ -20,6 +21,12 @@ function App() {
       <Route path='/sustainability-page' element={<SustainabilityPage/>} />
       <Route path='/product-lithium' element={<LithiumPage/>} />
       <Route path='/product-gold' element={<GoldPage/>} />
+      <Route path='/assets' element={<Assets/>} />
+      <Route path='/contact-us' element={<Contact/>} />
+      <Route path='/careers' element={<Careers/>} />
+      <Route path='/reports' element={<Reports/>} />
+      <Route path='/contract' element={<Contract/>} />
+      <Route path='/team' element={<Team/>} />
       </Routes>
 
 

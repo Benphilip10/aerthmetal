@@ -51,10 +51,10 @@ const LithiumPage = () => {
 
                     {/* Uses section */}
 
-                    <div className='mt-10 flex gap-4'>
+                    <div className='mt-10 flex gap-6'>
                         
                         {/* Card 1 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" d data-aos-duration="1000" data-aos="fade-right">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -62,14 +62,14 @@ const LithiumPage = () => {
                                 />
                             </div>
 
-                            <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Metallurgy</h1>
-                                <p className="font-light leading-6 text-[15px]">Lithium is used to remove impurities from metals like iron, nickel, copper and zinc.</p>
+                            <div className="p-4 mb-4">
+                                <h1 className="text-[30px] font-bold mb-2">Metallurgy</h1>
+                                <p className="font-light leading-6 text-[18px]">Lithium is used to remove impurities from metals like iron, nickel, copper and zinc.</p>
                             </div>
                         </div>
 
                         {/* Card 2 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="fade-left" data-aos-duration="1000">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -77,14 +77,16 @@ const LithiumPage = () => {
                                 />
                             </div>
 
-                            <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Organic Synthesis</h1>
-                                <p className="font-light leading-6 text-[15px]"> Lithium is used in the production of other organic chemicals, especially pharmaceuticals.</p>
+                            <div className="p-4 mb-4">
+                                <h1 className="text-[30px] font-bold mb-2">Organic Synthesis</h1>
+                                <p className="font-light leading-6 text-[18px]"> Lithium is used in the production of other organic chemicals, especially pharmaceuticals.</p>
                             </div>
                         </div>
+                    </div>
 
-                        {/* Card 3 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div className='mt-8 flex gap-6'>
+                            {/* Card 3 */}
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -92,14 +94,14 @@ const LithiumPage = () => {
                                 />
                             </div>
 
-                            <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Lithium-ion Batteries</h1>
-                                <p className="font-light leading-6 text-[15px]">Lithium is used in the production of lithium-ion batteries, which are used to power electric vehicles and store renewable energy.</p>
+                            <div className="p-4 mb-4">
+                                <h1 className="text-[30px] font-bold mb-2">Lithium-ion Batteries</h1>
+                                <p className="font-light leading-6 text-[18px]">Lithium is used in the production of lithium-ion batteries, which are used to power electric vehicles and store renewable energy.</p>
                             </div>
                         </div>
 
                         {/* Card 4 */}
-                        <div className="w-[400px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className="w-[580px] bg-white max-h-[500px] border border-[#d1d1d1] rounded-md" data-aos="zoom-in-up" data-aos-duration="1000">
                             
                             <div className="p-4 mt-1">
                                 <img className="rounded-lg" 
@@ -107,9 +109,9 @@ const LithiumPage = () => {
                                 />
                             </div>
 
-                            <div className="p-4 pb-">
-                                <h1 className="text-[18px] font-bold mb-2">Aerospace</h1>
-                                <p className="font-light leading-6 text-[15px]">Lithium-magnesium alloys and lithium-aluminum alloys are used in the aerospace industry.</p>
+                            <div className="p-4 mb-4">
+                                <h1 className="text-[30px] font-bold mb-2">Aerospace</h1>
+                                <p className="font-light leading-6 text-[18px]">Lithium-magnesium alloys and lithium-aluminum alloys are used in the aerospace industry.</p>
                             </div>
                         </div>
 

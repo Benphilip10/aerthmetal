@@ -17,10 +17,10 @@ const DropDown = (closeDropdown) => {
         <Link to='/about-us'><p className="hover:bg-[#D9DEE5] p-2 rounded-md transition-all 
               duration-100 ease-in" onClick={closeDropdown}>Who we are</p></Link>
 
-       <Link> <p className="p-2 hover:bg-[#D9DEE5] rounded-md transition-all 
+       <Link to='/assets'> <p className="p-2 hover:bg-[#D9DEE5] rounded-md transition-all 
               duration-100 ease-in" onClick={closeDropdown}>Our Assets</p></Link>
 
-       <Link><p className="hover:bg-[#D9DEE5] p-2 rounded-md transition-all 
+       <Link to='/contract'><p className="hover:bg-[#D9DEE5] p-2 rounded-md transition-all 
               duration-100 ease-in" onClick={closeDropdown}>Contract</p></Link>
         </div>
 

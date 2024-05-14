@@ -28,8 +28,23 @@ export default {
 
         'long-grey-curve': "url(src/assets/images/sustainability_grey_curve.svg)",
 
-        'long-red-curve': "url(src/assets/images/sustainability_red_curve.svg)"
+        'long-red-curve': "url(src/assets/images/sustainability_red_curve.svg)",
 
+        "map-bg": "url(src/assets/images/map.png)",
+
+        "contract-bg": "url(src/assets/images/contract-bg.png)",
+
+        "contact-bg": "url(src/assets/images/contact-bg.png)",
+
+        "career-bg": "url(src/assets/images/career-bg.png)",
+
+        "team-bg": "url(src/assets/images/team.png)",
+
+        "team-card": "url(src/assets/images/team-bg.png)",
+
+        "reports-bg": "url(src/assets/images/reports-bg.png)",
+
+        "assets-image": "url(src/assets/images/assets_bg.png)",
 
       },
 

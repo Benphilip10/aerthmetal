@@ -41,52 +41,22 @@ const cards = [
 
 const Approach = () => {
 
-    // // Function to move the slider automatically
-    // const moveAutomatically = () => {
-    //     // Move right first
-    //     moveSlider('right');
-    // };
-
-    // useEffect(() => {
-    //     // Start moving the slider automatically when the component mounts
-    //     const intervalId = setInterval(() => {
-    //         moveAutomatically();
-    //         // After a delay, move back to the left
-    //         setTimeout(() => {
-    //             moveSlider('left');
-    //         }, 8000); // Change the delay as needed, here it's set to 3 seconds (3000 milliseconds)
-    //     }, 6000); // Change the interval as needed, here it's set to 6 seconds (6000 milliseconds)
-        
-    //     // Clear the interval when the component unmounts
-    //     return () => clearInterval(intervalId);
-    // }, []); // Run this effect only once when the component mounts
-
-
-
     const [position, setPosition] = useState(0); // Initial position of the slider
-    // const totalCards = cards.length;
+  const [canMoveLeft, setCanMoveLeft] = useState(false); // State to track if left button can be clicked
+  const [canMoveRight, setCanMoveRight] = useState(true); // State to track if right button can be clicked
 
-    // const [canMoveLeft, setCanMoveLeft] = useState(true); // State to track if left button can be clicked
-    // const [canMoveRight, setCanMoveRight] = useState(true); // State to track if right button can be clicked
-
-
-// Move Slider function
+    // Move Slider function
   const moveSlider = (direction) => {
-  const newPosition = direction === 'left' ? position - 1 : position + 1;
-    
-
-    setPosition(newPosition);
-
-
-    // if (direction === 'left') {
-    //     setCanMoveLeft(false);
-    //   } else {
-    //         setCanMoveRight(false); // Disable right button
-    //       }
-
+    if (direction === "left" && position > 0) {
+      setPosition(position - 1);
+      setCanMoveRight(true);
+      if (position === 1) setCanMoveLeft(false);
+    } else if (direction === "right" && position < cards.length - 2) {
+      setPosition(position + 1);
+      setCanMoveLeft(true);
+      if (position === cards.length - 2) setCanMoveRight(false);
     }
-    
-
+}
 
     return (
 
@@ -125,11 +95,11 @@ const Approach = () => {
             </div>        
     
 
-                <div className='flex flex-row gap-10 justify-between'>        
+                <div className='flex flex-row gap-10 justify-between items-center'>        
                 <div className='mt-3 flex gap-8'>
                     <button
                         onClick={() => moveSlider('left')}  
-                        // disabled={position === 0 || !canMoveLeft}
+                        disabled={!canMoveLeft}
                     >
                     <img
                         src={arrow_left}
@@ -141,7 +111,7 @@ const Approach = () => {
 
                     <button
                       onClick={() => moveSlider('right')}  
-                    //   disabled={position === totalCards - 1 || !canMoveRight}
+                      disabled={!canMoveRight}
                     >
                     <img
                         src={arrow_right}
@@ -150,31 +120,19 @@ const Approach = () => {
                     />
                     </button>
                 </div>
+                <div className="w-[50%] h-2 bg-gray-300 rounded-full overflow-hidden relative mt-3">
+                    
+                        <div
+                        className="h-full bg-primary-blue absolute"
+                        style={{
+                            width: "50%",
+                            left: `${position * 50}%`,
+                            transition: "left 0.3s ease-in-out",}}
+                        ></div>
 
-                {/* <div className=''>
-    
-                            <div className="w-full">
-                            <div className="overflow-hidden w-full">
-                            <div className="flex transition-transform ease-in-out duration-300">
-                            
-                                <div className="w-64 flex-shrink-0 flex items-center justify-center bg-gray-200">
-                                Slide 1
-                                </div>
-                                <div className="w-64 flex-shrink-0 flex items-center justify-center bg-gray-200">
-                                Slide 2
-                                </div>
-                                <div className="w-64 flex-shrink-0 flex items-center justify-center bg-gray-200">
-                                Slide 3
-                                </div>
-                            </div>
-                            </div>
-                        
-                            
-                        </div>
- 
-                </div> */}
+                    </div>
 
-
+                    
                 </div>
                     
 

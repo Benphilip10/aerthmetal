@@ -4,9 +4,6 @@ import product_img2 from '../assets/images/product_img2.png';
 
 const Products = () => {
 
-    const scrollToTop = () => {
-        window.scrollTo(0, 0); // Scrolls to the top of the page
-      };
 
   return (
     <div className="padding h-full mb-12">
@@ -40,7 +37,7 @@ const Products = () => {
 
                     <div className="flex items-start mb-5">
               <NavLink to='/product-gold'><button className= "py-2 px-6 rounded-md text-white bg-primary-blue hover:scale-105 transition-all duration-300 ease-in hover:border-secondary-red hover:text-white"
-                onClick={scrollToTop}
+                onClick
               >
                   Learn More
               </button></NavLink>
@@ -63,7 +60,7 @@ const Products = () => {
 
                     <div className="flex items-start mb-5">
              <NavLink to='/product-lithium'> <button className= "py-2 px-6 rounded-md text-white bg-primary-blue hover:scale-105 transition-all duration-300 ease-in hover:border-secondary-red hover:text-white"
-             onClick={scrollToTop}
+             onClick
              >
                   Learn More
               </button> </NavLink>

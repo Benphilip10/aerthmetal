@@ -56,7 +56,7 @@ const CoreValueSlider = () => {
 
   return (
     
-    <div className=" h-[300px] flex flex-col relative">
+    <div className=" h-[350px] flex flex-col relative" data-aos = "fade-in" data-aos-duration = "850">
                     <div className="w-full overflow-x-hidden">
                                 <div
                                     className="flex gap-8 px-1 py-5 transition-transform duration-700 "

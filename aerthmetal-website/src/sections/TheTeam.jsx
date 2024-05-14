@@ -3,6 +3,7 @@ import TeamCard from "../components/TeamCard";
 import team_img1 from '../assets/images/team_img1.png';
 import team_img2 from '../assets/images/team_img2.png';
 import team_img3 from '../assets/images/team_img3.png';
+import { NavLink } from "react-router-dom";
 
 const teamData = [
 
@@ -49,9 +50,11 @@ const TheTeam = () => {
         </div>
 
         <div className="flex items-start">
-            <button className= "py-2 px-10 rounded-md text-white bg-primary-blue hover:scale-105 transition-all duration-300 ease-in hover:bg-[#D9DEE5] hover:text-primary-blue">
+            <NavLink to='/team'>
+            <button className= "py-2 px-10 rounded-md text-white bg-primary-blue hover:scale-105 transition-all duration-300 ease-in hover:bg-[#D9DEE5] hover:text-primary-blue" onClick>
                 VIEW ALL
             </button>
+            </NavLink>
         </div>
     </div>
 

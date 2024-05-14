@@ -7,9 +7,6 @@ import { NavLink } from "react-router-dom";
 
 const Services = () => {
 
-  const scrollToTop = () => {
-    window.scrollTo(0, 0); // Scrolls to the top of the page
-  };
 
   return (
     <div className="padding h-full bg-white bg-curves-bg bg-no-repeat">
@@ -27,7 +24,7 @@ const Services = () => {
           </div>
 
             <div className="flex mt-12">
-              <NavLink to='/services-page'><button type='button' className= "py-2 px-10 rounded-md text-white bg-primary-blue hover:scale-105 transition-all duration-300 ease-in hover:bg-[#D9DEE5] hover:text-primary-blue" onClick={scrollToTop}>
+              <NavLink to='/services-page'><button type='button' className= "py-2 px-10 rounded-md text-white bg-primary-blue hover:scale-105 transition-all duration-300 ease-in hover:bg-[#D9DEE5] hover:text-primary-blue" onClick>
                   VIEW ALL
               </button> </NavLink>
             </div>
